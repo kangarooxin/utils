@@ -1,6 +1,6 @@
 # utils
 
-# Mybatis UniqueColumnPlugin
+# Mybatis Generator Tools UniqueColumnPlugin
 ## config
 ```xml
 <plugin type="support.mybatis.UniqueColumnPlugin"/>
