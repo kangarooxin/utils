@@ -1,8 +1,8 @@
 # utils
 
 # UniqueColumnPlugin
-## config xml
-```
+## config
+```xml
 <plugin type="support.mybatis.UniqueColumnPlugin"/>
 
 <table tableName="test" domainObjectName="Test">
@@ -10,13 +10,13 @@
 </table>
 ```
 ## result
-```
+```java
 Test selectByTypeAndStatus(@Param("type") Byte type, @Param("status") Byte status);
 
 Test selectByName(String name);
 ```
 
-```
+```xml
 <select id="selectByTypeAndStatus" parameterType="map" resultMap="BaseResultMap">
   select 
   <include refid="Base_Column_List" />
